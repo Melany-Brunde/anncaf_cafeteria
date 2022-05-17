@@ -65,10 +65,10 @@ li{
 
 }
 
-.portada .portada__boton {
+.portada__boton {
     background: #FFD600;
     align-items: flex-end;
-	width: 50%;
+	width: 300px;
 	font-weight: bold;
 	font-size: 14px;
 	text-align: center;
@@ -77,9 +77,31 @@ li{
 	border-radius: 100px;
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
-    justify-content: center;
+    transition: all 2s;
 }
 
+.portada__boton:hover {
+    transform: scale(1.2);
+    animation-duration: 2s;
+    animation-name: portada__boton;
+
+}
+
+@keyframes portada__boton {
+    0% {
+        width: 350px;
+    }
+
+    50% {
+        width: 360px;
+        background-color: rgb(147, 0, 0);
+    }
+
+    100% {
+        width: 360px;
+        background-color: rgb(147, 0, 0);
+    }
+}
 
 
 
